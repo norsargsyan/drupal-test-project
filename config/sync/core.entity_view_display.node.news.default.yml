@@ -1,0 +1,43 @@
+uuid: b8294950-70e4-4161-99cd-67631209cd7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3217d17f-2f69-4d24-810d-81e3befc107b:
+            uuid: 3217d17f-2f69-4d24-810d-81e3befc107b
+            region: content
+            configuration:
+              id: 'extra_field_block:node:news:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

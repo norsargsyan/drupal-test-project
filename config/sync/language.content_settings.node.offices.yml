@@ -1,0 +1,16 @@
+uuid: 800eadbb-5d87-4cc7-8e01-362870bcc252
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.offices
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.offices
+target_entity_type_id: node
+target_bundle: offices
+default_langcode: site_default
+language_alterable: true

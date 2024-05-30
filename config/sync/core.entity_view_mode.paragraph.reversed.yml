@@ -1,0 +1,11 @@
+uuid: 636818d4-9b23-4cb1-b953-b08e2e43d073
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.reversed
+label: Reversed
+description: ''
+targetEntityType: paragraph
+cache: true

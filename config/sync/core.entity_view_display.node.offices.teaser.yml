@@ -1,0 +1,21 @@
+uuid: 52cad280-93e8-4f17-9b9e-5a0cb815d00b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.offices
+  module:
+    - user
+id: node.offices.teaser
+targetEntityType: node
+bundle: offices
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
