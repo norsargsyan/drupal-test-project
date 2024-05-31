@@ -1,0 +1,6 @@
+name: Main module
+description: Provides customization for project.
+package: Custom
+
+type: module
+core_version_requirement: ^9.4 || ^10
