@@ -1,0 +1,4 @@
+services:
+  sl_main.country_manager:
+    class: Drupal\sl_main\Services\CountryManager
+    arguments: [ '@http_client', '@entity_type.manager', '@messenger' ]

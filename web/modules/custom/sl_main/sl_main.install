@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function sl_main_install() {
+  \Drupal::service('sl_main.country_manager')->initCountries();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function sl_main_uninstall() {
+  \Drupal::service('sl_main.country_manager')->removeCountries();
+}
