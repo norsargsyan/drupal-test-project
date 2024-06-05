@@ -31,20 +31,13 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_country:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 2
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
+  field_country: true
   field_description_teaser: true
   field_image_teaser: true
   field_tags: true
