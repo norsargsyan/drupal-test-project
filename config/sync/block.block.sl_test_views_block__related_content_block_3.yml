@@ -1,0 +1,33 @@
+uuid: 09070a5e-45b3-455e-a5aa-0df0974841c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - node
+    - views
+  theme:
+    - sl_test
+id: sl_test_views_block__related_content_block_3
+theme: sl_test
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:related_content-block_3'
+settings:
+  id: 'views_block:related_content-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      offices: offices

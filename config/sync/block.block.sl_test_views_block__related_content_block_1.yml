@@ -1,0 +1,33 @@
+uuid: cad2e34a-6c07-4576-9292-9d5d89a76da6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_content
+  module:
+    - node
+    - views
+  theme:
+    - sl_test
+id: sl_test_views_block__related_content_block_1
+theme: sl_test
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:related_content-block_1'
+settings:
+  id: 'views_block:related_content-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

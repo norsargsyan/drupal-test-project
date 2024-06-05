@@ -4,18 +4,52 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.articles.field_content
+    - field.field.node.articles.field_country
+    - field.field.node.articles.field_description_teaser
+    - field.field.node.articles.field_image_teaser
+    - field.field.node.articles.field_tags
     - node.type.articles
   module:
+    - smart_trim
     - user
 id: node.articles.teaser
 targetEntityType: node
 bundle: articles
 mode: teaser
 content:
+  field_description_teaser:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 50
+      trim_type: words
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more:
+        display_link: false
+        target_blank: false
+        link_trim_only: false
+        class: more-link
+        text: More
+        aria_label: 'Read more about [node:title]'
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+        replace_tokens: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
+  field_content: true
+  field_country: true
+  field_image_teaser: true
+  field_tags: true
   langcode: true

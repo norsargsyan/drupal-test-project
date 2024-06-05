@@ -1,0 +1,23 @@
+uuid: da8489c4-581c-4efd-b966-1e69d29d7842
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sl_test
+id: sl_test_sitebranding
+theme: sl_test
+region: footer_top
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

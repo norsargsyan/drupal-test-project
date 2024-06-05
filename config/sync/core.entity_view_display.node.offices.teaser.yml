@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.offices.field_content
+    - field.field.node.offices.field_country
+    - field.field.node.offices.field_image_teaser
     - node.type.offices
   module:
     - user
@@ -12,10 +15,21 @@ targetEntityType: node
 bundle: offices
 mode: teaser
 content:
+  field_image_teaser:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
+  field_content: true
+  field_country: true
   langcode: true

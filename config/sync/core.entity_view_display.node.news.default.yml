@@ -3,41 +3,53 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.news.field_content
+    - field.field.node.news.field_description_teaser
+    - field.field.node.news.field_image_teaser
+    - field.field.node.news.field_tags
     - node.type.news
   module:
+    - entity_reference_revisions
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
-    enabled: true
+    enabled: false
     allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          3217d17f-2f69-4d24-810d-81e3befc107b:
-            uuid: 3217d17f-2f69-4d24-810d-81e3befc107b
-            region: content
-            configuration:
-              id: 'extra_field_block:node:news:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
 id: node.news.default
 targetEntityType: node
 bundle: news
 mode: default
 content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_description_teaser:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 100
     region: content
 hidden:
+  field_image_teaser: true
   langcode: true

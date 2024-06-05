@@ -1,0 +1,15 @@
+uuid: 55abdee9-17ad-400f-a02e-310173e0bf01
+langcode: en
+status: true
+dependencies: {  }
+name: teaser
+label: 'Teaser 360*240'
+effects:
+  e7dd28a4-000b-40dc-90ba-68b5f2022c2b:
+    uuid: e7dd28a4-000b-40dc-90ba-68b5f2022c2b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 360
+      height: 240
+      anchor: center-center

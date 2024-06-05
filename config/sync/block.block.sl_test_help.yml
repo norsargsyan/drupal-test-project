@@ -1,0 +1,22 @@
+uuid: 57f3712e-0819-4f9e-a95d-f7219f9dceb1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - sl_test
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: sl_test_help
+theme: sl_test
+region: highlighted
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

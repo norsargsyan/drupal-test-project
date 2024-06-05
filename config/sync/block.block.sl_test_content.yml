@@ -1,0 +1,22 @@
+uuid: a623142e-faf8-4fd1-aa1c-9b7f09e50b2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sl_test
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: sl_test_content
+theme: sl_test
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

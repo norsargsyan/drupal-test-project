@@ -1,0 +1,10 @@
+.paragraph--type--text-and-image {
+  display: flex;
+  > div {
+    width: 50%;
+  }
+}
+
+.paragraph--type--text-and-image.paragraph--view-mode--reversed {
+  flex-direction: row-reverse;
+}

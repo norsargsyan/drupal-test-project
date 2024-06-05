@@ -1,0 +1,4 @@
+global_styling:
+  css:
+    component:
+      css/main.css: {}

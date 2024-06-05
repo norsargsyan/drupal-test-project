@@ -1,0 +1,19 @@
+uuid: dbddf837-9d0f-44b6-a813-ed7740bdbf4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description_teaser
+    - node.type.articles
+id: node.articles.field_description_teaser
+field_name: field_description_teaser
+entity_type: node
+bundle: articles
+label: 'Description teaser'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

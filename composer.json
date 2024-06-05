@@ -17,10 +17,13 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/bootstrap5": "^4.0",
         "drupal/core-composer-scaffold": "^10.2",
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/devel": "^5.2",
+        "drupal/field_group": "^3.4",
         "drupal/metatag": "^2.0",
         "drupal/paragraph_blocks": "^4.0",
         "drupal/paragraph_view_mode": "^3.1",

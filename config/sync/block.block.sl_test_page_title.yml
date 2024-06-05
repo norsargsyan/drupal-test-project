@@ -1,0 +1,26 @@
+uuid: dc424dca-594f-4b59-8fb7-9eb623cc7053
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - sl_test
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: sl_test_page_title
+theme: sl_test
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

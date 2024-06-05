@@ -22,11 +22,6 @@ display:
           exposed_sorts_label: 'Sorteren op'
           sort_asc_label: Oplopend
           sort_desc_label: Aflopend
-      empty:
-        area_text_custom:
-          content: 'Er is nog geen inhoud gemaakt voor de voorpagina.<br />Volg de <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">Gebruikershandleiding</a> om uw site te bouwen.'
-        title:
-          title: Welkom!
   feed_1:
     display_title: Feed
   page_1:
